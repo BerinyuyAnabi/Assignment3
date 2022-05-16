@@ -1,0 +1,5 @@
+Instructions:
+- Select all the <li> tags in div1 and change their color to red using the child selector.
+- Select the <p> tag with the content "Hello world" and using the adjacent sibling selector and change the font size to 20px.
+- Select the anchor tag with the text "Mr.Arc link" using the descendant selector and change the color to blue.
+- Select all the <li> link in the div with the class "div3" using the general sibling selector and change the font size to 20px and color to indigo.
