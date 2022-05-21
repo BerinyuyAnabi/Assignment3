@@ -1,11 +1,24 @@
 body{
     background-color: tomato;
-
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
     display: inline-flex;
     flex-direction: column;
+    margin: 0px 15px ;
 }
 
 .flex-container > div{
@@ -15,20 +28,54 @@ body{
     text-align: center;
 
 }
-.img-container{
+.card .img-container{
     max-width: 100%;
     height: 200px;
     overflow: hidden;
+    border-bottom: 5px solid tomato;
 }
 
-img{
+.card .img-container img{
     height:100%;
     width: auto;
 }
 
-button{
-    padding: 5px;
-    border-radius: 15px;
-    border-color: red;
-    align: center;
+.card .card-content{
+    padding: 30px 20px 10px;
+}
+
+
+
+.card .card-content{
+    padding: 30px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .card-content h3{
+    font-size: 14px;
+    color: rgb(167, 166, 166);
+    margin: 15px 0;
+}
+.card .card-content h2{
+    font-size: 25px;
+}
+
+.card .card-content p{
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 0 ;
+}
+
+.card .card-content a{
+    display: inline-block;
+    text-decoration: none;
+    color: tomato;
+    border: 1px solid tomato;
+    padding: 5px 20px;
+    margin: 15px 0 0;
+    font-size: 14px;
+    border-radius: 20px;
+
 }
